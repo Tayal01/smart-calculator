@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/assets/calculator.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 id="heading">Calculator</h1>
+    <div class="container">
+        <div class="calc-text">
+            <p id="user-input">0</p>
+        </div>
+        <div class="calc-keys">
+            <button type="button" class="operations key-operate">AC</button>
+            <button type="button" class="operations key-operate">DEL</button>
+            <button type="button" class="operations key-operate">+/-</button>
+            <button type="button" class="operations key-operate">/</button>
+            <button type="button" class="numbers">7</button>
+            <button type="button" class="numbers">8</button>
+            <button type="button" class="numbers">9</button>
+            <button type="button" class="operations key-operate">*</button>
+            <button type="button" class="numbers">4</button>
+            <button type="button" class="numbers">5</button>
+            <button type="button" class="numbers">6</button>
+            <button type="button" class="operations key-operate">-</button>
+            <button type="button" class="numbers">1</button>
+            <button type="button" class="numbers">2</button>
+            <button type="button" class="numbers">3</button>
+            <button type="button" class="operations key-operate">+</button>
+            <button type="button" class="numbers">0</button>
+            <button type="button" class="numbers">.</button>
+            <button type="button" class=" key-equal key-operate-equal">=</button>
+        </div>
+        <div class="history-panel" id="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

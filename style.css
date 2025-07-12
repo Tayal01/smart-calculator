@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #8bc6ec;
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.calc-text {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.calc-text p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 3.2rem;
+    text-align: end;
+    color: #fff;
+}
+
+.calc-keys {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+}
+
+button:active {
+    transform: scale(1.02);
+}
+
+.numbers {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 25%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.numbers:hover {
+    background-color: #555;
+    transition: background-color 0.2s ease;
+}
+
+.operations {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 25%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.operations:hover {
+    background-color: rgba(255, 166, 0, 1);
+    transition: background-color 0.2s ease;
+}
+
+.key-equal {
+    grid-column: span 2;
+    width: 150px;
+    background-color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.key-equal:hover {
+    background-color: rgb(239, 143, 90);
+    transition: background-color 0.2s ease;
+}
+
+.key-operate {
+    background-color: rgba(255, 166, 0, 0.887);
+}
+
+.key-operate:hover {
+    background-color: #ffae42;
+}
+
+.key-operate-equal {
+    background-color: rgb(239, 145, 45);
+}
+
+.history-panel {
+    color: white;
+    margin-top: 20px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-y: auto;
+    font-size: 1rem;
+}
+
+.history-panel p {
+    margin: 5px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calc-text p {
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    #heading {
+        font-size: 1.9rem;
+    }
+
+    .calc-text p {
+        font-size: 2rem;
+    }
+
+    .numbers,
+    .operations {
+        font-size: 1.2rem;
+    }
+
+    .key-equal {
+        font-size: 1.2rem;
+    }
+
+    .history-panel {
+        font-size: 1rem;
+    }
+}
